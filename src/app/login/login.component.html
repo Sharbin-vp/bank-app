@@ -1,0 +1,29 @@
+<nav class="navbar bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="src\assets\bank_icon.png" alt="" width="30" height="24">
+    </a>
+    <a class="navbar-brand position-fixed p-5" href="#">True Bank</a>
+    <h3 style="color: blue;">{{welcome}}</h3>
+  </div>
+</nav>
+<div id="log_1" class=" container-fluid">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <form action="" class="m-5 p-5">
+        <label for="">
+          <p class="ms-5 ps-5">Login</p>
+        </label>
+        <input [(ngModel)]="acno" name="account_number" type="text" class="form-control m-2" [placeholder]="account">
+        <input [(ngModel)]="pswd" name="password" type="password" class="form-control m-2" placeholder="Password">
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+        <button (click)="login()" type="submit" class="btn btn-outline-success m-2 ms-5 mx-auto">Login</button>
+      </form>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>
